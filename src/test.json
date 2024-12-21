@@ -1,0 +1,65 @@
+{
+    "name": "{\"ar\": \"\", \"en\": \"\"}",
+    "details": "{\"ar\": \"\", \"en\": \"\"}",
+    "address": "{\"ar\": \"\", \"en\": \"\"}",
+    "slogan": "{\"ar\": \"\", \"en\": \"\"}",
+    "taxService": "{\"ar\": \"\", \"en\": \"\"}",
+    "image": "/images/",
+    "cover": "/images/",
+    "detailsImage": "",
+    "theme": "#000000",
+    "phone": "",
+    "whatsapp": "",
+    "date": [
+        {
+            "day": 0,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 1,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 2,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 3,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 4,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 5,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        },
+        {
+            "day": 6,
+            "openedFrom": "00:00",
+            "openedTo": "23:59",
+            "off": false
+        }
+    ],
+    "url": "",
+    "defaultLanguage": "ar",
+    "currency": {
+        "name": "﷼",
+        "enName": "SAR"
+    },
+    "tables": 0,
+    "avgRate": 0
+}

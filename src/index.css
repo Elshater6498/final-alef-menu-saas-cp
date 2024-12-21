@@ -1,0 +1,17 @@
+@import "./assets/styles/app.css";
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgb(159, 159, 159);
+border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+margin: 7px;
+border-radius: 20px;
+background-color: transparent;
+}
