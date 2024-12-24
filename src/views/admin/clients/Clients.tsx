@@ -514,7 +514,7 @@ const Clients = () => {
                             </div>
                             <div className="w-full flex justify-end items-start">
                               <a
-                                href={`https://menusoft.vercel.app/${restaurant?.url}`}
+                                href={`${appConfig.mainurl}${restaurant?.url}`}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="w-fit flex gap-2 items-center justify-center border border-gray-100 rounded-full py-2 px-5"

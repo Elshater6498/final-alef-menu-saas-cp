@@ -10,7 +10,7 @@ export type AppConfig = {
 
 const appConfig: AppConfig = {
     apiPrefix: 'https://saas.alefmenu.com',
-    mainurl: 'https://menusoft.vercel.app/',
+    mainurl: 'https://alef-menu-saas.vercel.app/',
     authenticatedEntryAdminPath: '/admin/home',
     authenticatedEntryPath: '/home',
     unAuthenticatedEntryPath: '/sign-in',
