@@ -2,7 +2,7 @@ import { StatisticsType } from '@/@types/statistics'
 import { Card, Skeleton, Table } from '@/components/ui'
 import { useTranslation } from 'react-i18next'
 import { BsBagCheck, BsBicycle, BsShop } from 'react-icons/bs'
-const { Tr, Th, Td, THead, TBody, Sorter } = Table
+const { Tr, Th, Td, THead, TBody } = Table
 
 interface Props {
     isLoading: boolean
@@ -129,17 +129,12 @@ const SalesOverview = ({ isLoading, statistics }: Props) => {
                                         <TBody className="">
                                             {statistics.top_restaurants.map(
                                                 (restaurant, index) => (
-                                                    <Tr
-                                                        key={index}
-                                                        className=""
-                                                    >
+                                                    <Tr key={index}>
                                                         <Td>{index + 1}</Td>
                                                         <Td>
-                                                            <div className="font-medium text-center">
-                                                                {
-                                                                    restaurant.restaurant_name
-                                                                }
-                                                            </div>
+                                                            {
+                                                                restaurant.restaurant_name
+                                                            }
                                                         </Td>
                                                         <Td>
                                                             {restaurant
