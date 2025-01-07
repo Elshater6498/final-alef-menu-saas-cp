@@ -8,54 +8,56 @@ import LanguageSelector from '../template/LanguageSelector'
 import VisitMenuButton from '../template/VisitMenuButton'
 import { AuthorityCheck } from '../shared'
 import { useAppSelector } from '@/store'
+import ModeSwitcher from '../template/ThemeConfigurator/ModeSwitcher'
+import ThemeSwitcher from '../template/ThemeConfigurator/ThemeSwitcher'
 
 const HeaderActionsStart = () => {
-  return (
-    <>
-      <MobileNav />
-      <SideNavToggle />
-    </>
-  )
+    return (
+        <>
+            <MobileNav />
+            <SideNavToggle />
+        </>
+    )
 }
 
 const HeaderActionsEnd = () => {
-  const userAuthority = useAppSelector((state) => state.auth.user.authority)
-  return (
-    <>
-      <>
-        <div className="flex items-center gap-4">
-          <AuthorityCheck
-            userAuthority={userAuthority!}
-            authority={["3" , "4"]}
-          >
-            <VisitMenuButton />
-          </AuthorityCheck>
-          {/* <ThemeSwitcher /> */}
-          {/* <ModeSwitcher /> */}
-          <LanguageSelector />
-        </div>
-        <UserDropdown hoverable={false} />
-      </>
-    </>
-  )
+    const userAuthority = useAppSelector((state) => state.auth.user.authority)
+    return (
+        <>
+            <>
+                <div className="flex items-center gap-4">
+                    <AuthorityCheck
+                        userAuthority={userAuthority!}
+                        authority={['3', '4']}
+                    >
+                        <VisitMenuButton />
+                    </AuthorityCheck>
+                    <ThemeSwitcher />
+                    <ModeSwitcher />
+                    <LanguageSelector />
+                </div>
+                <UserDropdown hoverable={false} />
+            </>
+        </>
+    )
 }
 
 const ModernLayout = () => {
-  return (
-    <div className="app-layout-modern flex flex-auto flex-col">
-      <div className="flex flex-auto min-w-0">
-        <SideNav />
-        <div className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full bg-white dark:bg-gray-800 border-l border-gray-200 dark:border-gray-700">
-          <Header
-            className="border-b border-gray-200 dark:border-gray-700"
-            headerEnd={<HeaderActionsEnd />}
-            headerStart={<HeaderActionsStart />}
-          />
-          <View />
+    return (
+        <div className="app-layout-modern flex flex-auto flex-col">
+            <div className="flex flex-auto min-w-0">
+                <SideNav />
+                <div className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full bg-white dark:bg-gray-800 border-l border-gray-200 dark:border-gray-700">
+                    <Header
+                        className="border-b border-gray-200 dark:border-gray-700"
+                        headerEnd={<HeaderActionsEnd />}
+                        headerStart={<HeaderActionsStart />}
+                    />
+                    <View />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  )
+    )
 }
 
 export default ModernLayout

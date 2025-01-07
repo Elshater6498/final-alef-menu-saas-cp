@@ -1,6 +1,5 @@
 import LanguageSelector from '@/components/template/LanguageSelector'
 import SignInForm from './SignInForm'
-import Cover from '@/components/layouts/AuthLayout/Cover'
 import { useTranslation } from 'react-i18next'
 
 const SignIn = () => {

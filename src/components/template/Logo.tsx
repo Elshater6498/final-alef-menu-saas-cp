@@ -22,19 +22,22 @@ const Logo = (props: LogoProps) => {
     } = props
 
     return (
-      <div
-      className={classNames('logo z-40', className)}
-      style={{
-          ...style,
-          ...{ width: logoWidth },
-      }}
-  >
-    <img
-        className={imgClass}
-        src={`${LOGO_SRC_PATH}logo-${mode}-${type}.png`}
-        alt={`${APP_NAME} logo`}
-    />
-  </div>
+        <div
+            className={classNames('logo z-40 py-10', className)}
+            style={{
+                ...style,
+                ...{ width: logoWidth },
+            }}
+        >
+            <img
+                className={classNames(
+                    imgClass,
+                    mode === 'dark' && 'invert brightness-0'
+                )}
+                src={`${LOGO_SRC_PATH}logo-${mode}-${type}.png`}
+                alt={`${APP_NAME} logo`}
+            />
+        </div>
     )
 }
 

@@ -507,7 +507,7 @@ const ClientDialog = (props: Props) => {
                       type="text"
                       autoComplete="off"
                       name="domain"
-                      placeholder={`xxxxx => https://menu-soft.com/xxxxx`}
+                      placeholder={`xxxxx => https://alef-menu.com/xxxxx`}
                       component={Input}
                     />
                   </FormItem>}
