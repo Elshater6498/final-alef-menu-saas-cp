@@ -134,6 +134,7 @@
     "inRestaurant": "(Activate / deactivate) the order inside the restaurant",
     "takeaway": "(Activate / deactivate) receiving the order from the restaurant",
     "delivery": "(Activate / deactivate) order delivery",
+    "inWhatsapp": "(Activate / deactivate) in case of activation, the orders will be sent to WhatsApp, otherwise the orders will be received through the control panel",
     "order settings": "Order Settings"
   },
   "home": {},

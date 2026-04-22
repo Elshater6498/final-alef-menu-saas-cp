@@ -14,6 +14,7 @@ import dayjs from 'dayjs'
 import { useAppSelector } from '@/store'
 import InfoBills from './InfoBills'
 import { useTranslation } from 'react-i18next'
+import appConfig from '@/configs/app.config'
 
 const { Tr, Th, Td, THead, TBody } = Table
 
@@ -260,7 +261,7 @@ const NewOrder = () => {
   useEffect(() => {
     // Initialize WebSocket connection
     socketRef.current = new WebSocket(
-      `wss://saas.alefmenu.com/orders/ws?resid=${restaurantId}`
+      `${appConfig.socketPrefix}/orders/ws?resid=${restaurantId}`
     )
     // Handle connection close
     socketRef.current.onopen = (e) => {

@@ -54,10 +54,10 @@
     "powered-by": "مدعوم من",
     "sign-out": "تسجيل الخروج",
     "export": "تصدير",
-    "Email verified" : "تم التحقق من البريد الإلكتروني",
-    "You can now log in" :"يمكنك الآن تسجيل الدخول",
-    "Email not verified" : "لم يتم التحقق من البريد الإلكتروني",
-    "An error occurred while verifying your email. Please try again":"حدث خطأ أثناء التحقق من البريد الإلكتروني. يرجى المحاولة مرة أخرى"
+    "Email verified": "تم التحقق من البريد الإلكتروني",
+    "You can now log in": "يمكنك الآن تسجيل الدخول",
+    "Email not verified": "لم يتم التحقق من البريد الإلكتروني",
+    "An error occurred while verifying your email. Please try again": "حدث خطأ أثناء التحقق من البريد الإلكتروني. يرجى المحاولة مرة أخرى"
   },
   "auth": {
     "sign-in": {
@@ -134,6 +134,7 @@
     "inRestaurant": "(تفعيل / تعطيل) الطلب داخل المطعم",
     "takeaway": "(تفعيل / تعطيل) استلام الطلب من المطعم",
     "delivery": "(تفعيل / تعطيل) توصيل الطلب",
+    "inWhatsapp": "(تفعيل / تعطيل) في حالة التفعيل سيتم ارسال الطلبات على واتساب اما في حالة التعطيل سيتم استلام الطلبات من خلال لوحة التحكم",
     "order settings": "إعدادات الطلب"
   },
   "home": {},
@@ -188,12 +189,12 @@
     "Quantity": "الكمية",
     "price": "السعر",
     "product": "المنتج",
-    "status":"حالة الطلب",
-    "pending":"قيد المعالجة",
-    "completed":"منجز",
-    "cancelled" : "مرفوض",
+    "status": "حالة الطلب",
+    "pending": "قيد المعالجة",
+    "completed": "منجز",
+    "cancelled": "مرفوض",
     "Delivery price": "سعر التوصيل",
-    "notes":"ملاحظات"
+    "notes": "ملاحظات"
   },
   "share": {
     "Menu link": "رابط القائمة",
@@ -211,7 +212,7 @@
     "rate time": "وقت التقييم",
     "(hide / show )the rating from the side menu": "(إخفاء / إظهار) التقييم من القائمة الجانبية"
   },
-"client-management": {
+  "client-management": {
     "client": "عميل",
     "add-client": "إضافة عميل",
     "client-name": "اسم العميل",
@@ -229,7 +230,7 @@
     "client-city": "المدينة",
     "client-responsiblePerson": "الشخص المسؤول",
     "client-notes": "ملاحظات"
-},
+  },
   "package-management": {
     "package": "الباقة",
     "add-package": "إضافة باقة",
@@ -243,10 +244,10 @@
     "package-name-en": "اسم الباقة (بالإنجليزية)",
     "package-details": "تفاصيل الباقة (بالعربية)",
     "package-details-en": "تفاصيل الباقة (بالإنجليزية)",
-    "package-features":"ميزات الباقة (بالعربية)",
-    "package-features-en":"ميزات الباقة (بالإنجليزية)",
-    "add feature":"إضافة ميزة",
-    "addons":"الإضافات"
+    "package-features": "ميزات الباقة (بالعربية)",
+    "package-features-en": "ميزات الباقة (بالإنجليزية)",
+    "add feature": "إضافة ميزة",
+    "addons": "الإضافات"
   },
   "admin-management": {
     "user": "مستخدم",
@@ -256,7 +257,7 @@
     "user-phone": "هاتف المستخدم",
     "verified": "التحقق من البريد الإلكتروني",
     "active": "تفعيل",
-    "permissions" : "الصلاحيات"
+    "permissions": "الصلاحيات"
   },
   "statistics": {
     "admins_count": "إجمالي المسؤولين",

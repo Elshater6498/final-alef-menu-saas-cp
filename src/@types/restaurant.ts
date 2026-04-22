@@ -24,6 +24,7 @@ export interface Restaurant {
     takeaway?: boolean
     delivery?: boolean
     inRestaurant?: boolean
+    inWhatsapp?: boolean
     showRates?: boolean
     socialMedia?: SocialMedia[]
     createdAt?: Date

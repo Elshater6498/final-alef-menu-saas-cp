@@ -48,6 +48,7 @@ const restaurant = createSlice({
             state.takeaway = action.payload?.takeaway
             state.delivery = action.payload?.delivery
             state.inRestaurant = action.payload?.inRestaurant
+            state.inWhatsapp = action.payload?.inWhatsapp
             state.details = action.payload?.details
             state.showRates = action.payload?.showRates
             state.shippingFees = action.payload?.shippingFees

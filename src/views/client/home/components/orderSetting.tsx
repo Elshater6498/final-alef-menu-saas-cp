@@ -26,6 +26,7 @@ type orderSettingFormType = {
   takeaway?: boolean
   delivery?: boolean
   inRestaurant?: boolean
+  inWhatsapp?: boolean
 }
 
 const OrderSetting = () => {
@@ -38,6 +39,7 @@ const OrderSetting = () => {
     takeaway: Yup.bool(),
     delivery: Yup.bool(),
     inRestaurant: Yup.bool(),
+    inWhatsapp: Yup.bool(),
   })
 
   // handel submit
@@ -56,6 +58,10 @@ const OrderSetting = () => {
     formData.append(
       'inRestaurant',
       `${values.inRestaurant}`
+    )
+    formData.append(
+      'inWhatsapp',
+      `${values.inWhatsapp}`
     )
     const res = await updateRestaurant(formData)
     if (res?.status === 'success') {
@@ -81,6 +87,7 @@ const OrderSetting = () => {
         takeaway: restaurant.takeaway ?? true,
         delivery: restaurant.delivery ?? true,
         inRestaurant: restaurant.inRestaurant ?? true,
+        inWhatsapp: restaurant.inWhatsapp ?? true,
       }}
       enableReinitialize={true}
       validationSchema={validationSchema}
@@ -91,6 +98,32 @@ const OrderSetting = () => {
           <Form>
             <FormContainer size="sm">
               <div className="max-w-3xl mx-auto space-y-2">
+              <Card>
+                  <div className='flex gap-4'>
+                    <Field
+                      name={`inWhatsapp`}
+                      id={`inWhatsapp`}
+                      invalid={
+                        errors.inWhatsapp &&
+                        touched.inWhatsapp as boolean
+                      }
+                      errorMessage={errors.inWhatsapp}
+                    >
+                      {({
+                        field,
+                        form,
+                        meta,
+                      }: FieldProps) => (
+                        <Switcher
+                          field={
+                            field
+                          }
+                        />
+                      )}
+                    </Field>
+                    <span>{t('client-home.inWhatsapp')}</span>
+                  </div>
+                </Card>
                 <Card>
                   <div className='flex gap-4'>
                     <Field
