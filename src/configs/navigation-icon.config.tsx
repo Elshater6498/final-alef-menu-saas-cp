@@ -1,5 +1,16 @@
-import { IoFastFoodOutline, IoRestaurantOutline, IoStatsChartOutline } from 'react-icons/io5'
-import { MdOutlineAdminPanelSettings, MdOutlineCategory, MdOutlineDeliveryDining, MdOutlineShare, MdOutlineStarRate, MdPersonOutline } from 'react-icons/md'
+import {
+    IoFastFoodOutline,
+    IoRestaurantOutline,
+    IoStatsChartOutline,
+} from 'react-icons/io5'
+import {
+    MdOutlineAdminPanelSettings,
+    MdOutlineCategory,
+    MdOutlineDeliveryDining,
+    MdOutlineShare,
+    MdOutlineStarRate,
+    MdPersonOutline,
+} from 'react-icons/md'
 import { GoPackage } from 'react-icons/go'
 
 export type NavigationIcons = Record<string, JSX.Element>
@@ -11,7 +22,7 @@ const navigationIcon: NavigationIcons = {
     products: <IoFastFoodOutline />,
     order: <MdOutlineDeliveryDining />,
     share: <MdOutlineShare />,
-    rateing: <MdOutlineStarRate />,
+    ratings: <MdOutlineStarRate />,
     client: <MdPersonOutline />,
     admin: <MdOutlineAdminPanelSettings />,
     package: <GoPackage />,

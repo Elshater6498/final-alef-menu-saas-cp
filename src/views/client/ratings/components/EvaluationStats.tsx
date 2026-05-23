@@ -69,7 +69,7 @@ export const EvaluationStats: React.FC<EvaluationStatsProps> = () => {
     return (
         <div className="p-6 rounded-lg shadow-md mb-6 max-w-2xl">
             <h2 className="text-xl font-semibold mb-4 ">
-                {t('rateing.sub-title')}
+                {t('ratings.sub-title')}
             </h2>
             <div className="space-y-3 flex items-center gap-4">
                 <span className="text-7xl">{avgRate}</span>

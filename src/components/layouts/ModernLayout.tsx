@@ -33,7 +33,6 @@ const HeaderActionsEnd = () => {
                         <VisitMenuButton />
                     </AuthorityCheck>
                     <ThemeSwitcher />
-                    <ModeSwitcher />
                     <LanguageSelector />
                 </div>
                 <UserDropdown hoverable={false} />

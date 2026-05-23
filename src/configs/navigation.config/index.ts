@@ -13,7 +13,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.home',
         icon: 'admin_home',
         type: NAV_ITEM_TYPE_ITEM,
-        authority:  ['1', '2'],
+        authority: ['1', '2'],
         subMenu: [],
     },
     // {
@@ -33,7 +33,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.client-management',
         icon: 'client',
         type: NAV_ITEM_TYPE_ITEM,
-        authority:  ['1', '2'],
+        authority: ['1', '2'],
         subMenu: [],
     },
     {
@@ -43,7 +43,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.admin-management',
         icon: 'admin',
         type: NAV_ITEM_TYPE_ITEM,
-        authority:  ['1'],
+        authority: ['1'],
         subMenu: [],
     },
     {
@@ -53,7 +53,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.client-home',
         icon: 'home',
         type: NAV_ITEM_TYPE_ITEM,
-        authority: ['3' , '4'],
+        authority: ['3', '4'],
         subMenu: [],
     },
     {
@@ -87,11 +87,11 @@ const navigationConfig: NavigationTree[] = [
         subMenu: [],
     },
     {
-        key: 'rateing',
-        path: '/rateing',
-        title: 'rateing',
-        translateKey: 'nav.rateing',
-        icon: 'rateing',
+        key: 'ratings',
+        path: '/ratings',
+        title: 'ratings',
+        translateKey: 'nav.ratings',
+        icon: 'ratings',
         type: NAV_ITEM_TYPE_ITEM,
         authority: ['rates.list'],
         subMenu: [],
@@ -113,7 +113,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.share',
         icon: 'share',
         type: NAV_ITEM_TYPE_ITEM,
-        authority: ['3' , '4'],
+        authority: ['3', '4'],
         subMenu: [],
     },
 ]
