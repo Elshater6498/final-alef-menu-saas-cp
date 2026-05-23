@@ -9,7 +9,6 @@ import VisitMenuButton from '../template/VisitMenuButton'
 import { AuthorityCheck } from '../shared'
 import { useAppSelector } from '@/store'
 import ModeSwitcher from '../template/ThemeConfigurator/ModeSwitcher'
-import ThemeSwitcher from '../template/ThemeConfigurator/ThemeSwitcher'
 
 const HeaderActionsStart = () => {
     return (
@@ -32,7 +31,7 @@ const HeaderActionsEnd = () => {
                     >
                         <VisitMenuButton />
                     </AuthorityCheck>
-                    <ThemeSwitcher />
+                    <ModeSwitcher />
                     <LanguageSelector />
                 </div>
                 <UserDropdown hoverable={false} />
